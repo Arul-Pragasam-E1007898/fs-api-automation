@@ -13,7 +13,7 @@ public class ApiTestRunner {
      */
     @Karate.Test
     Karate testAll() {
-        return Karate.run("classpath:com/freshworks/features")
+        return Karate.run("classpath:com/freshworks/features").tags("test")
                 .relativeTo(getClass());
     }
 
